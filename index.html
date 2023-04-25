@@ -1,61 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top10 Filmes do IMDB</title>
-   
-    <link rel="stylesheet" href="style.css">
-    <button onclick="exibirAlerta()">Sugestões</button>
-    <p onmouseover="alterarConteudo()">Clique para enviar sugestões.</p>
-
-
-</head>
-<body>
-  <h1>Top 10 Filmes do IMDB</h1>
-  <strong>Lista</strong>
-  <ul>
-
-    <li>
-        <a href="posteres.html" target="_blank">The Shawshank Redemption</a>
-      </li>
-      <li>
-        <a href="posteres.html" target="_blank">The Godfather </a>
-      </li>
-      <li>
-        <a href="posteres.html" target="_blank">The Dark Knight </a>
-      </li>
-      <li>
-        <a href="posteres.html" target="_blank">The Godfather Part II </a>
-      </li>
-      <li>
-        <a href="posteres.html" target="_blank">12 Angry Men </a>
-      </li>
-      <li>
-        <a href="posteres.html" target="_blank">Schindler's List </a>
-      </li>
-      <li>
-        <a href="posteres.html" target="_blank">The Lord of the Rings: The Return of the King </a>
-      </li>
-      <li>
-        <a href="posteres.html" target="_blank">Pulp Fiction </a>
-      </li>
-      <li>
-        <a href="posteres.html" target="_blank">O Senhor dos Anéis: A Sociedade do Anel </a>
-      </li>
-      <li>
-        <a href="posteres.html" target="_blank">Três Homens em Conflito </a>
-      </li>
-    </ul>
-
-    <script>
-        function exibirAlerta() {
-          alert("Sugestão enviada");
+    <title>Portfólio Web Lucas Alexandrino</title>
+    
+    <link rel="stylesheet" href="assets/style.css">
+    <style> 
+    
+        body {
+    
+            background-color: rgb(73, 206, 73);
+    
+        }
+    
+        em {
+    
+            color: rgb(3, 10, 90);
+        }
+    
+        .meuNome  {
+           text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        .Descricao {
+    
+          font-family: Arial, Helvetica, sans-serif;
+          position:absolute
+          top 10px; /* ajustar para ficar ao lado*/
+          right: 200px; /* tambem  adada */
+        }       
+         .javascript {
+    
+            font-size: 20px;
+        
+         }
+    
+         .sql {
+    
+          
+          font-size: 20px;
+         }
+    
+         .react {
+    
+            font-size: 20px;
+         }
+    
+         .bootstrap {
+    
+            font-size: 20px;
+         }
+    
+         .Agil {
+    
+            font-size: 20px;
+        
+         }
+    
+         #foto {
+          height: 100px; /*ajustar a altura heigh*/
+          
+          padding: 10px; /*ver se nao saiu do quadro(borda)*/
+          background-color: green;
+    
+         }
+    
+         .imagem-desc {
+    
+          height:100px;
+          position:relative;
+    
+         }
+    
+         ul li:nth-child(odd) {
+    
+          background-color: rgb(14, 145, 145);
+          
+         }
+         
+         
+         .libutton {
+    
+           
+           display:flex;
+           flex-direction: column;
+           justify-content: center;
+           padding: 7px;
+           text-align: center;
+           outline: none;
+           text-decoration: none !important;
+           color: #ffffff !important;
+           width: 200px;
+           height: 32px;
+           border-radius: 16px;
+           background-color: #0A66C2;
+           font-family: "Coolvetica";
+         }
+         
+         .libutton:hover {
+          background-color: #0f5aa5;
+          
+        }
+        .gitbutton {
+          display: flex;
+           flex-direction: column;
+           justify-content: center;
+           padding: 7px;
+           text-align: center;
+           outline: none;
+           text-decoration: none !important;
+           color: #ffffff !important;
+           width: 200px;
+           height: 32px;
+           border-radius: 16px;
+           background-color: #1f2327;
+           font-family: "Coolvetica";
+        }
+        .gitbutton:hover {
+          background-color: #000000;
+          
         }
         
-        function alterarConteudo() {
-          document.querySelector("p").innerHTML = "Mande sua sugestão";
-        }
-      </script>
+    </style>
+   
+</head>
+
+<body>
+
+    <div>
+    <h1="#sobre-mim">Olá me chamo Rodrigo, tenho 27 anos e sou estudante de Desenvolvimento Web FullStack na<strong> GENERATION </strong></h1>
+
+    <h1 class="meuNome">Rodrigo Araujo</h1>
+    <div class="imagem-desc" >
+    <img src="minhafoto.jpg" alt="Tryber sorrindo com camiseta da Trybe" id="foto">
+    <p class="Descricao"> <em><strong> Minha paixão por tecnologia surgiu com meu fator curiosidade em 5 anos</em> </strong><p> Desde então não parei de ver coisas diferentes a respeito a tecnologia e quero continuar explorando toda essa evolução que vivemos </p>
+
+        Até chegar a <a href= "https://brazil.generation.org/" target= "_blank">Trybe</a> e descobrir que a programação era algo que eu precisava ter em minha vida a fim e alcançar objetivos maiores.
+        </p>
+    </div>
+   </div>  
+    <p class="resido"><strong>Carapicuíba - São Paulo</strong></p>
+    <h2>Lista de habilidades</h2>
+    
+
+    <ul>
+        <li class="javascript">Javascript</li>
+        <li class="sql">SQL</li>
+        <li class="react">React</li>
+        <li class="bootstrap">Bootstrap</li>
+        <li class="Agil">Metodologias ágeis</li>
+    </ul>
+    ///////////////////////////////////
+    <ul>
+    <li> <a href="#minha-foto">Minha foto</a></li>
+      </ul>
+
+    
 </body>
+
 </html>
